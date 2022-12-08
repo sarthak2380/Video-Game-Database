@@ -25,7 +25,7 @@ def signup_command():
             connection = mysql.connector.connect(host='localhost',
                                                  database='game',
                                                  user='root',
-                                                 password='sarthak@2308')
+                                                 password='1234')
             cursor = connection.cursor()
             query = "CREATE TABLE IF NOT EXISTS USER(username varchar(30) primary key, password varchar(30));"
             cursor.execute(query)
@@ -141,7 +141,7 @@ def signinn():
         connection = mysql.connector.connect(host='localhost',
                                              database='game',
                                              user='root',
-                                             password='sarthak@2308')
+                                             password='1234')
         cursor = connection.cursor()
         query = "CREATE TABLE IF NOT EXISTS GAMESS(game_ID varchar(30) primary key, name varchar(30), genre varchar(30), release_year varchar(30), creator varchar(30), price int, duration int, critic_rating int)"
         cursor.execute(query)
